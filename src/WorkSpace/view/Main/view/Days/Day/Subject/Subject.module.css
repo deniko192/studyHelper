@@ -1,0 +1,36 @@
+.subject {
+    position: relative;
+    margin-top: 2px;
+    border: 1px solid red;
+}
+
+.tasks {
+    border: 1px solid rgb(255, 251, 0);
+    padding-left: 15px; 
+}
+
+
+
+.addTaskBtn {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.addTaskBtn::after, .addTaskBtn::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 1.4px;
+    background-color: rgb(128, 131, 128);
+    top: 50%;
+    left: 0;
+}
+
+.addTaskBtn::after {
+    transform: rotate(90deg);
+}

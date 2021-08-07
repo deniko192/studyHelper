@@ -3,6 +3,8 @@ import Cookies from 'js-cookie';
 import { Link } from 'react-router-dom';
 import { removeUserAction, userAtom } from '../../StartPage/model/userAtom';
 import styles from './WorkSpace.module.css';
+import Header from './Header/Header';
+import Main from './Main/view/Main';
 
 function WorkSpace() {
     const user = useAtom(userAtom);
@@ -21,7 +23,8 @@ function WorkSpace() {
 
     return(
         <div className={styles.WorkSpace}>
-            <LogoutBtn />
+            <Header />
+            <Main />
         </div>
     );
 }

@@ -1,0 +1,11 @@
+.task {
+    cursor: pointer;
+    border: 1px solid rgb(38, 0, 255);
+    margin-bottom: 2px;
+}
+
+.taskCompleted {
+    cursor: pointer;
+    border: 1px solid rgb(97, 189, 60);
+    margin-bottom: 2px;
+}

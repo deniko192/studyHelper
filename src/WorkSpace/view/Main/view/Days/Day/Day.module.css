@@ -1,0 +1,88 @@
+.day { 
+    position: relative;
+    margin-top: 5px;
+    width: 19.8%;
+    margin-left: 0.2%;
+    flex-grow: 1;
+    min-width: 300px;
+    max-width: 400px;
+    min-height: 100px;
+    background-color: rgb(199, 205, 211);
+}
+
+@media only screen and (max-device-width: 600px) {
+    .day {
+        min-width: 100%;
+    }
+}
+
+.noDataText {
+    margin-left: 10px;
+    margin-top: 10px;
+    align-self: center;
+    width: 200px;
+    opacity: 0.5;
+}
+
+.date {
+    text-align: center;
+    border-bottom: 1px solid rgba(177, 168, 168, 0.562);
+}
+
+.addSubjectBtn {
+    cursor: pointer;
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 0;
+    right: 25px;
+    border-radius: 50%;
+}
+
+.addSubjectBtn::after, .addSubjectBtn::before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 1.8px;
+    background-color: rgb(125, 123, 128);
+    top: 50%;
+    left: 0;
+}
+
+.addSubjectBtn::after {
+    transform: rotate(90deg);
+}
+
+.deleteDayBtn {
+    cursor: pointer;
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 0;
+    right: 2px;
+    border-radius: 50%;
+}
+
+.deleteDayBtn::after, .deleteDayBtn::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 1.8px;
+    background-color: rgb(187, 53, 53);
+    top: 50%;
+    left: 0;
+    transform: rotate(45deg);
+}
+
+.deleteDayBtn::after {
+    transform: rotate(-45deg);
+}
+
+.subjects {
+    border: 1px solid rgba(229, 255, 0, 0.384);
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+}
