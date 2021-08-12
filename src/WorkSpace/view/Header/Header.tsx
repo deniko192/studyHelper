@@ -1,7 +1,11 @@
+import { useAction } from '@reatom/react';
 import React from 'react';
+import { addDayAction } from '../Main/view/Days/model/daysAtom';
 import styles from './Header.module.css';
 
 function Header(){
+    const addDay = useAction(addDayAction);
+
     return(
         <div className={styles.header}>
             <div className={styles.wrapper}>
@@ -12,7 +16,10 @@ function Header(){
                     Logout
                 </div>
                 <div className={styles.toolBar}>
-                    <div className={styles.toolBarItem}>
+                    <div 
+                        className={styles.toolBarItem}
+                        onClick={() => {addDay()}} 
+                    >
                         add
                     </div>
                 </div>
